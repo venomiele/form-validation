@@ -1,0 +1,115 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://cdn.pixabay.com/photo/2018/09/03/23/56/sea-3652697_960_720.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    backdrop-filter: brightness(30%);
+    width: 30%;
+    border-radius: 6px;
+    color: white;
+    font-weight: 900;
+    box-shadow: 10px 10px 20px black;
+}
+
+.header {
+    padding: 1.75rem;
+    border-bottom: 1px solid white;
+    background-color: black;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+i {
+position: absolute;
+top: 55px;
+right: 40px;
+display: none;
+}
+
+
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.form-validation {
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+.btn {
+    width: 90%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(147, 147, 238);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.btn:hover{
+    color: white;
+    transform:scale(1.05);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Input states */
+
+.form-validation.succes input {
+    border: 3px solid lightgreen;
+}
+
+.form-validation.succes .bi-check-circle-fill {
+    display: block;
+    color: lightgreen;
+    font-size: 1.25rem;
+}
+
+.form-validation.error-msg input {
+    border: 3px solid red;
+}
+
+.form-validation.error-msg .bi-exclamation-circle-fill {
+    display: block;
+    color: red;
+    font-size: 1.25rem;
+}
+
+.form-validation.error-msg .error {
+    display: block;
+}
+
