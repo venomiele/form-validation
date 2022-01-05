@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="account">Create Account</h2>
+        </div>
+        <form class="form-control">
+        <div class="form-validation succes">
+                <label for="input">Username</label>
+                <input type="text" class="input" id="input" placeholder="andrei22">
+                <i class="bi bi-exclamation-circle-fill"></i>
+                <i class="bi bi-check-circle-fill"></i>
+                <small class="error">Error message</small>
+        </div>
+        <div class="form-validation error-msg">
+            <label for="input">Email</label>
+            <input type="email" class="input" id="input" placeholder="andrei22@yahoo.com">
+            <i class="bi bi-exclamation-circle-fill"></i>
+            <i class="bi bi-check-circle-fill"></i>
+            <small class="error">Error message</small>
+    </div>
+    <div class="form-validation">
+        <label for="password">Password</label>
+        <input type="password" class="input" id="input" placeholder="Password">
+        <i class="bi bi-exclamation-circle-fill"></i>
+        <i class="bi bi-check-circle-fill"></i>
+        <small class="error">Error message</small>
+</div>
+<div class="form-validation">
+    <label for="input">Password check</label>
+    <input type="password" class="input" id="input" placeholder="Same Password">
+    <i class="bi bi-exclamation-circle-fill"></i>
+    <i class="bi bi-check-circle-fill"></i>
+    <small class="error">Error message</small>
+</div>
+<div class="buttons">
+<button class="btn">Submit</button>
+</div>
+</form>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
