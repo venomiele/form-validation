@@ -19,7 +19,7 @@ body {
 
 .container {
     backdrop-filter: brightness(30%);
-    width: 30%;
+    width: 50%;
     border-radius: 6px;
     color: white;
     font-weight: 900;
@@ -47,7 +47,7 @@ display: none;
 }
 
 
-.input {
+#input {
     width: 100%;
     padding: 0.75rem;
     border-radius: 5px;
@@ -89,11 +89,11 @@ display: none;
 
 /* Input states */
 
-.form-validation.succes input {
+.form-validation.success input {
     border: 3px solid lightgreen;
 }
 
-.form-validation.succes .bi-check-circle-fill {
+.form-validation.success .bi-check-circle-fill {
     display: block;
     color: lightgreen;
     font-size: 1.25rem;
