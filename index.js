@@ -33,7 +33,9 @@ function checkInputs() {
 
     if(pass1Value == "") {
       setErrorFor(pass1, "Password can't be empty")
-    } else {
+    } else if(!passValidation(pass1Value)) {
+      setErrorFor(pass1, "Password must contain at least an uppercase letter,lowercase letter,a digit and a special character!")
+  } else {
       setSuccessFor(pass1);
     }
 
@@ -67,3 +69,11 @@ function checkInputs() {
     var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return emailPattern.test(elementValue); 
   } 
+
+  //Password validation regex
+
+
+  function passValidation(password) {
+    var pattern = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{8,20}$/;
+    return pattern.test(password);
+  }
