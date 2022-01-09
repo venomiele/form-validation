@@ -63,6 +63,7 @@ display: none;
 .error {
     color: red;
     display: none;
+    margin: 0.25rem;
 }
 
 .btn {
@@ -113,3 +114,27 @@ display: none;
     display: block;
 }
 
+/* Media queries */
+
+@media screen and (max-width: 661px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    html {
+        font-size: 11px;
+    }
+    .container {
+        width: 80%;
+    }
+
+    i {
+        position: absolute;
+        top: 42px;
+        right: 40px;
+        display: none;
+        }
+
+}
